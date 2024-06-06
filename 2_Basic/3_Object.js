@@ -35,4 +35,5 @@ JsUser.email="sahil@HCL.com"
  JsUser.greetingTwo=function(){
     console.log(`Hello JS User,${this.email}`)
  }
+ 
  console.log(JsUser.greetingTwo())
