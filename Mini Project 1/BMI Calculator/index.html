@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <!-- Adding CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="https://github.com/sahillohan33/js-hindi" target="_blank"
+        >Github</a
+      >
+    </nav>
+    <div class="container">
+      <h1>BMI Generator</h1>
+      <form action="">
+        <label for="height">Height in cm</label>
+        <input type="text"  id="height" autocomplete="off">
+        <label for="weight">Weight in kg</label>
+        <input type="text"  id="weight" autocomplete="off">
+        <button  type="submit">Calculate</button>
+        <div id="result">Sahil</div>
+        <div id="weight-guide">
+          <h3>BMI Weight Guide</h3>
+          <p>Under Weight=Less than 18.6</p>
+          <p>Normal Range = 18.6 and 24.9</p>
+          <p>Overweight = Greater than 24.9</p>
+        </div>
+      </form>
+    </div>
+    <!-- Adding javaScript -->
+    <script src="bmi.js"></script>
+  </body>
+</html>
