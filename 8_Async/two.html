@@ -12,9 +12,22 @@
 </body>
 <script>
     // method 1         setInterval(()=>{console.log("Sahil",Date.now())},1000)
-    const sayDate=function(str){
+     let timeId;
+    
+       document.querySelector("#start").addEventListener("click",()=>{
+
+        const sayDate=function(str){
         console.log(str,Date.now())
     }
-    setInterval(sayDate,1000,"Hi")
+        timeId=setInterval(sayDate,1000,"Hi")
+        console.log("Started")
+       })
+   
+// stop
+   document.querySelector("#stop").addEventListener("click",()=>{
+    clearInterval(timeId)
+    console.log("Stopped")
+   })
+    
 </script>
 </html>
