@@ -18,6 +18,11 @@
     }
     // setTimeout(saySahil,2000)
 
-    setTimeout(changeText,2000)
+    const changeMe=setTimeout(changeText,2000)
+
+    document.querySelector("#stop").addEventListener("click",()=>{
+        clearTimeout(changeMe)
+        console.log("Stopped")
+    })
 </script>
 </html>
