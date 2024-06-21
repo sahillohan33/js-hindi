@@ -22,6 +22,7 @@
     init();
       */
 
+      /*
 
       function outer(){
         let username="Sahil"
@@ -36,5 +37,21 @@
       }
       outer()
       console.log("TOO OUTER",username)
+
+      */
+
+// closure
+
+      function makeFunc() {
+        const name = "Mozilla";
+        function displayName() {
+          console.log(name);
+        }
+        return displayName;
+      }
+      
+      const myFunc = makeFunc();
+      myFunc();
+      
 </script>
 </html>
