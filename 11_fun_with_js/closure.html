@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clousre Aur Scope</title>
+</head>
+<body style="background:#313131;">
+    
+</body>
+
+<script>
+    /*
+    function init() {
+        let name = "Mozilla"; // name is a local variable created by init
+        function displayName() {
+          // displayName() is the inner function, that forms the closure
+          console.log(name); // use variable declared in the parent function
+        }
+        displayName();
+      }
+    init();
+      */
+
+
+      function outer(){
+        let username="Sahil"
+        function inner(){
+            console.log("TOO INNER",username)
+        }
+        function innerTwo(){
+            console.log("TOO INNERTWO",username)
+        }
+        inner()
+        innerTwo()
+      }
+      outer()
+      console.log("TOO OUTER",username)
+</script>
+</html>
